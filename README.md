@@ -13,7 +13,8 @@ Based on: https://stackoverflow.com/questions/21297139/how-do-you-sign-a-certifi
 4. Execute `make` and that's it.
 
 Note: like the server configuration the keys and certificates will also have
-the FQDN as base name.
+the FQDN as base name. To view certificates you can use something like:
+`openssl x509 -in server.example.com.crt -text`
 
 ## Clean up
 Use `make clean` to remove all server keys and certificates, not this is not
