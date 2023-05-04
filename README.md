@@ -8,7 +8,8 @@ Based on: https://stackoverflow.com/questions/21297139/how-do-you-sign-a-certifi
 1. Alter the `ca.cnf` to your liking.
 2. (Optional) Execute `make ca` to create the CA already.
 3. Create server configurations based on `server.example.com.cnf`. Use the
-   FQDN as base name and alter the `default_keyfile` in it accordingly!
+   FQDN as base name and make sure to replace all occasions of
+   `server.example.com` by your machine's hostname.
 4. Execute `make` and that's it.
 
 Note: like the server configuration the keys and certificates will also have
