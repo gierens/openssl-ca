@@ -6,6 +6,6 @@ if [ -f ca.crt ]; then
 fi
 
 rm -f index.txt serial.txt
-openssl req -x509 -config ca.cnf -days 36500 -newkey rsa:4096 -sha512 -nodes -out ca.crt -outform PEM
+openssl req -x509 -config ca.cnf -newkey rsa -nodes -out ca.crt -outform PEM
 touch index.txt
 echo 01 > serial.txt
