@@ -30,6 +30,7 @@ unique_subject = no  # Set to 'no' to allow creation of
 ####################################################################
 [ req ]
 default_bits       = 4096
+default_md         = sha512
 default_keyfile    = ca.key
 distinguished_name = ca_distinguished_name
 x509_extensions    = ca_extensions
