@@ -5,6 +5,9 @@ authority and issue server certificates with it.
 Based on: https://stackoverflow.com/questions/21297139/how-do-you-sign-a-certificate-signing-request-with-your-certification-authority/21340898#21340898
 
 # How to use it
+If you already created the CA and just added new server configs, you can
+directly proceed to step 3.
+
 1. Alter the `ca.cnf` to your liking.
 2. (Optional) Execute `make ca` to create the CA already.
 3. Create server configurations based on `server.example.com.cnf`. Use the
