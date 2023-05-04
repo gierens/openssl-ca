@@ -9,6 +9,7 @@ Based on: https://stackoverflow.com/questions/21297139/how-do-you-sign-a-certifi
 3. Create server configurations based on `server.example.com.cnf`. Use the
    FQDN as base name!
 4. Execute `make` and that's it.
+
 Note: like the server configuration the keys and certificates will also have
 the FQDN as base name.
 
