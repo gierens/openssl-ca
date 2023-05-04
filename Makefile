@@ -28,4 +28,4 @@ clean:
 	rm -f $(CSRS) $(CRTS) $(KEYS)
 
 clean-ca: clean
-	rm -f ca.key ca.crt index.txt* serial.txt *.pem
+	rm -f ca.key ca.crt index.txt* serial.txt* *.pem
