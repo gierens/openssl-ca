@@ -8,6 +8,7 @@ Based on: https://stackoverflow.com/questions/21297139/how-do-you-sign-a-certifi
 If you already created the CA and just added new server configs, you can
 directly proceed to step 3.
 
+0. Create `~/.rnd` if you don't already have it. You may use `touch ~/.rnd`.
 1. Alter the `ca.cnf` to your liking.
 2. (Optional) Execute `make ca` to create the CA already.
 3. Create server configurations based on `server.example.com.cnf`. Use the
