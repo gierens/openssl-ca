@@ -9,7 +9,10 @@ If you already created the CA and just added new server configs, you can
 directly proceed to step 3.
 
 0. Create `~/.rnd` if you don't already have it. You may use `touch ~/.rnd`.
-1. Alter the `ca.cnf` to your liking.
+1. Alter the `ca.cnf` to your liking. You might also want to update the `-days`
+   argument in the `create_ca.sh` otherwise it defaults to 30 days only. (I
+   haven't yet found a way to set this in the config file. In case you do
+   please let me know!)
 2. (Optional) Execute `make ca` to create the CA already.
 3. Create server configurations based on `server.example.com.cnf`. Use the
    FQDN as base name and make sure to replace all occasions of
